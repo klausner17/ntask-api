@@ -4,7 +4,7 @@
   "description": "API  de gestão de tarefas",
   "main": "index.js",
   "scripts": {
-    "start": "apidoc -i routes/ -o public/apidoc && babel-node index.js",
+    "start": "apidoc -i routes/ -o public/apidoc && npm run cluster",
     "cluster": "babel-node cluster.js",
     "apidoc": "apidoc -i routes/ -o public/apidoc",
     "test": "SET NODE_ENV=test&&mocha test/**/*.js"
